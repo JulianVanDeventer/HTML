@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- Programming Exercise 6.18 -->
+<!-- Created by Julian VanDeventer 9/15/2024 -->
+
+<html>
+
+	<head>
+	
+		<meta charset = "utf-8">
+		<title>Programming Exercise 6.18</title>
+		<script type = "text/javascript">
+			
+			//Establishes variables for the script 
+			var firstNumber;
+			var secondNumber;
+			var thirdNumber;
+			var number1;
+			var number2;
+			var number3;
+			var sum;
+			var average;
+			var smallest;
+			var largest;
+
+			
+			//Prompts the user to enter integers
+			firstNumber = window.prompt("Enter first integer" );
+
+			secondNumber = window.prompt("Enter second integer" );
+
+			thirdNumber = window.prompt("Enter third integer" );
+
+
+			//Converts user input from string to integer
+			number1 = parseInt( firstNumber );
+			number2 = parseInt( secondNumber );
+			number3 = parseInt( thirdNumber );
+			
+
+			//Calculates sum, average, largest, and smallest
+			sum = number1 + number2 + number3;
+			average = (number1 + number2 + number3) / 3;
+			largest = Math.max(number1, number2, number3);
+			smallest = Math.min(number1, number2, number3);
+
+
+			//Displays results on the screen
+			document.write("<h1>The sum is " + sum + "</h1>");
+			document.write("<h1>The average is " + average + "</h1>");
+			document.write("<h1>The largest is " + largest + "</h1>");
+			document.write("<h1>The smallest is " + smallest + "</h1>");
+			
+
+		</script>
+
+
+	</head>
+
+<body>
+</body>
+
+</html>

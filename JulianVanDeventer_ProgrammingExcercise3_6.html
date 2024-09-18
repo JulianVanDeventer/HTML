@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>Register</h1>
+    <form action="/submit_registration" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">E-mail Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <details>
+            <summary>Optional: Survey Question</summary>
+            <label for="yearInCollege">What is your year in college?</label><br>
+            <select id="yearInCollege" name="yearInCollege">
+                <option value="" selected disabled>Select your year</option>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                <option value="graduate">Graduate</option>
+            </select><br><br>
+        </details>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>

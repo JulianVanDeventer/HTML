@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Programming Exercise 7.13 -->
+<!-- Created by Julian VanDeventer 9/15/2024 -->
+
+<html>
+
+	<head>
+	
+		<meta charset = "utf-8">
+		<title>Programming Exercise 7.13</title>
+		<script type = "text/javascript">
+			
+			//establishes the variables
+			var item1;
+			var item2;
+			var item3;
+			var item4;
+			var sold1;
+			var sold2;
+			var sold3;
+			var sold4;
+			var bonus;
+			var salesEarning;
+			var commissionRate;
+			var totalPay;
+
+			
+			//prompts user to enter numbr of each item sold
+
+			sold1 = window.prompt("How many of item 1 was sold: ");
+
+			sold2 = window.prompt("How many of item 2 was sold: ");
+
+			sold3 = window.prompt("How many of item 3 was sold: ");
+			
+			sold4 = window.prompt("How many of item 4 was sold: ");
+
+
+			//establishes the constant price for each item
+			const itemPrices = {
+				1: 239.99,
+				2: 129.75,
+				3: 99.95,
+				4: 350.89
+			};
+
+			bonus = 200;
+			commissionRate = 0.09;
+
+			//converts string into int
+			item1 = parseInt( sold1 );
+			item2 = parseInt( sold2 );
+			item3 = parseInt( sold3 );
+			item4 = parseInt( sold4 );
+
+
+			//calculates total earnings
+			salesEarning = item1 * itemPrices[1] + item2 * itemPrices[2] + 				item3 * itemPrices[3] + item4 * itemPrices[4];
+
+			//calculates pay
+			totalPay = (salesEarning * commissionRate) + bonus;
+
+
+			//displays earnings
+			document.write("<h1> Total Pay = " + totalPay  + "</h1>");
+
+		</script>
+
+
+	</head>
+
+<body>
+</body>
+
+</html>
+
+
